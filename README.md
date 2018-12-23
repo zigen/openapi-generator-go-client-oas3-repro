@@ -2,13 +2,23 @@
 
 at [9e1cce2e](https://github.com/OpenAPITools/openapi-generator/tree/9e1cce2e7b2fefa742c4992215c59998fb9fb311)
 ## directories
-`go-sample-api`: generated code by [composed-oneof.yaml](https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator/src/test/resources/3_0/composed-oneof.yaml)
-`go-oneof.sh`: shell script to generate `go-sample-api`. put this file into `openapi-generator/bin` and then `./bin/go-oneof.sh`
-`go-client-sample`: client code which uses `go-sample-api`
+`go-sample-api` : 
+
+generated code by [composed-oneof.yaml](https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator/src/test/resources/3_0/composed-oneof.yaml)  
+if you want to try this, ensure this pkg in `$GOPATH/src/github.com/zigen/go-sample-api`
+
+
+`go-oneof.sh` : 
+
+  shell script to generate `go-sample-api`.  
+  put this file into `openapi-generator/bin` and then `$ ./bin/go-oneof.sh`
+
+`go-client-sample` : client code which uses `go-sample-api`
 
 ## output
 
 ```
+# in go-sample-api
 $ go run main.go
 
 # github.com/zigen/go-sample-api
